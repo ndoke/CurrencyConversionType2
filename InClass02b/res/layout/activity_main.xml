@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.inclass02b.MainActivity" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Amount (USD)" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Result:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rad01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Euro (EUR)" />
+
+        <RadioButton
+            android:id="@+id/rad02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Canadian Dollar (CAD)" />
+
+        <RadioButton
+            android:id="@+id/rad03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="British Pound (GBP)" />
+
+        <RadioButton
+            android:id="@+id/rad04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Japanese Yen (JPY)" />
+
+        <RadioButton
+            android:id="@+id/rad05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Clear All" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert" />
+
+</LinearLayout>
